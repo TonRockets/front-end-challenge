@@ -1,6 +1,6 @@
 import React, {memo} from 'react';
-import Spinner from 'components/spinner';
 import Input from 'components/input'
+import FormStatus from 'components/formStatus'
 import Styles from 'pages/login/Login.module.scss';
 
 const Login: React.FC = () => {
@@ -12,10 +12,7 @@ const Login: React.FC = () => {
             <Input type="password" name="password" placeholder="Digite sua senha" />
             <button className={Styles.submit} type="submit">Entrar</button>
             <span className={Styles.link}>Criar conta</span>
-            <div className={Styles.errorWrap}>
-               <Spinner className={Styles.spinner} />
-               <span className={Styles.error}>Error</span>
-            </div>
+            <FormStatus />
          </form>
          <footer className={Styles.footer}></footer>
       </div>
