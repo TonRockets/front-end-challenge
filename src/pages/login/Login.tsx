@@ -1,6 +1,5 @@
 import React, {memo} from 'react';
-import Input from 'components/input'
-import FormStatus from 'components/formStatus'
+import {Input, FormStatus} from 'components'
 import Styles from 'pages/login/Login.module.scss';
 
 const Login: React.FC = () => {

@@ -1,6 +1,5 @@
 import pageStyles from 'components/page/Page.module.scss';
-import Header from 'components/header';
-import Footer from 'components/footer';
+import {Header, Footer} from 'components'
 
 interface PageProps {
    children: React.ReactNode | React.ReactNode[];
