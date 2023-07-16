@@ -1,17 +1,5 @@
 @import '../../components/styles/colors.module.scss';
 
-* {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: $background;
-}
-
 input[type="email"],
 input[type="password"] {
     border: 1px solid $primaryLight;
@@ -40,26 +28,6 @@ button {
 .login {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-
-    .header {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        color: $secondary;
-        background-color: $primary;
-        border-top: 40px solid $primaryDark;
-
-        img {
-            margin-top: 40px;
-        }
-
-        h1 {
-            color: $white;
-            margin: 16px 0px 40px;
-        }
-    }
 
     .form {
         display: flex;
@@ -129,8 +97,5 @@ button {
 
     }
 
-    .footer {
-        background-color: $primary;
-        height: 48px;
-    }
+    
 }

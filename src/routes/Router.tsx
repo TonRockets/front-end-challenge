@@ -23,7 +23,7 @@ const getRouteElement = (Component: React.ElementType): React.ReactNode => (
    </Suspense>
 );
 const routes: Routes[] = [
-   { path: paths.HOME, element: getRouteElement(Home) },
+   { path: paths.HOME, element: getRouteElement(Login) },
    { path: paths.NOT_FOUND, element: getRouteElement(PageNotFound) },
    { path: paths.LOGIN, element: getRouteElement(Login) }
 ];

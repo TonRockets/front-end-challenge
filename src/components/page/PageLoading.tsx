@@ -1,5 +1,7 @@
+import Styles from 'components/page/Page.module.scss';
+
 const PageLoading = () => {
-   return <div>Page is loading...</div>;
+   return <div className={Styles.pageLoading}>Page is loading...</div>;
 };
 
 export default PageLoading;
