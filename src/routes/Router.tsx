@@ -1,9 +1,9 @@
 import { lazy, Suspense } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
-import PageLoading from 'components/page/PageLoading';
-import Page from 'components/page/Page';
+import {Page, PageLoading} from 'components';
 import paths from 'routes/paths';
+import 'components/styles/global.module.scss'
 
 const Login = lazy(async () => await import('pages/login/Login'));
 const PageNotFound = lazy(async () => await import('pages/PageNotFound'));
